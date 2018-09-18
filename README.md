@@ -7,7 +7,7 @@ severl things needed to be done before running this program.
 
 First, in the Grid class I try to simulate a grid.
 Thus, the file you put into this pogram should have some
-specifc format.
+specifc format. The format of the file should be 9 * 9.
 
 Example: test.txt
 
