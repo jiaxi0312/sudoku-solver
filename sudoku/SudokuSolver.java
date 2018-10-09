@@ -59,7 +59,7 @@ public class SudokuSolver {
     private static boolean explore(Grid g) {
         int[] cellNumber = g.getUnassignedLocation();
         if (cellNumber[0] == -1) {
-            //every position has been placed the right number
+            //every position has been placed with the right number
             return true;
         } else {
             //still some position need to be filled
@@ -70,6 +70,7 @@ public class SudokuSolver {
                     if (explore(g)) {
                         return true;
                     }
+                    //romves the wrong attempt
                     g.remove(cellNumber);
                 }
             }
