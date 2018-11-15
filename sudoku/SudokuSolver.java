@@ -56,6 +56,7 @@ public class SudokuSolver {
         }
     }
 
+    // explores all possiblities until we find one right solution
     private static boolean explore(Grid g) {
         int[] cellNumber = g.getUnassignedLocation();
         if (cellNumber[0] == -1) {
