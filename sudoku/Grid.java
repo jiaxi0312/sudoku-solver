@@ -30,6 +30,8 @@ public class Grid {
 
     /**
      * creates the grid containing some specific numbers
+     * iterates all the elements in the scanner and then
+     * stores the given numbers in the grid
      */
     public void createCols() {
         this.cols = new int[9][9];
@@ -43,7 +45,8 @@ public class Grid {
 
     /**
      * helper method for createCols
-     *
+     * stores the given number from the scanner into the grid
+     * if there is no given number stores 0
      * @param index keeps track of the row of the cols
      * @param s     a line to be precessed
      */
@@ -63,7 +66,7 @@ public class Grid {
     }
 
     /**
-     * gets a void place for a new number
+     * gets a void place for placing a new number
      * @return an array contains the location
      * the first element of the array is row position, second is the col position
      * if all locations have been assigned return -1 in both places
@@ -83,7 +86,7 @@ public class Grid {
     }
 
     /**
-     * checks weather it is safe to place
+     * checks weather this number is safe to place in this location
      *
      * @param coordinate the void place which can be used to put the number
      * @param number     the given number to be put into the grid
